@@ -53,7 +53,7 @@ table {
 /* --- */
 body {
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 .header,
@@ -66,7 +66,7 @@ body {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 500;
 }
 
@@ -74,8 +74,9 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 130px;
-    font-size: 12px;
+    width: 145px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .div-button {
@@ -88,8 +89,8 @@ h2 {
     padding: 5px;
 }
 
-.light-btn,
-.dark-btn {
+#light-btn,
+#dark-btn {
     width: 20px;
     height: 20px;
     padding: 3px;
@@ -97,7 +98,7 @@ h2 {
     cursor: pointer;
 } 
 
-.light-btn {
+#light-btn {
     background-image: url('../assets/img/sol.png');
     background-size: 15px;
     background-repeat: no-repeat;
@@ -105,7 +106,7 @@ h2 {
     background-color: #FFD000;
 }
 
-.dark-btn {
+#dark-btn {
     background-image: url('../assets/img/luna.png');
     background-size: 15px;
     background-repeat: no-repeat;
@@ -141,5 +142,21 @@ h1 {
     width: 75%;
     text-align: justify;
     line-height: 1.15;
-    color: #3f3f3f;
+    font-weight: 100;
+}
+
+.black-background {
+    background-color: black;
+}
+
+.yellow-text {
+    color: #FFD000;
+}
+
+.white-text {
+    color: white;
+}
+
+.hide {
+    visibility: hidden;
 }
