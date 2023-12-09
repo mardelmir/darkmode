@@ -22,7 +22,7 @@ darkBtn.addEventListener('click', () => {
 })
 
 const changeMode = () => {
-    document.getElementsByTagName('body')[0].classList.toggle('black-background')
+    document.body.classList.toggle('black-background')
 
     const yellow = [document.getElementsByTagName('h1')[0], document.getElementsByTagName('h2')[0]]
     yellow.forEach((title => title.classList.toggle('yellow-text')))
@@ -30,3 +30,12 @@ const changeMode = () => {
     const white = [document.getElementById('dark-mode-title'), document.querySelector('.div-text')]
     white.forEach((text => text.classList.toggle('white-text')))
 }
+
+
+// Mucho más sencillo
+// const body = document.body
+// const contentToggle = document.getElementById('content-toggle')
+
+// contentToggle.addEventListener('click', ()=> {
+//     body.classList.toggle('dark')
+// })
